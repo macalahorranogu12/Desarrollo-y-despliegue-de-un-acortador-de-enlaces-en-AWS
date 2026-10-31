@@ -37,7 +37,7 @@ def shorten_url(req: URLRequest):
     return {
         "short_code": short_code,
         "original_url": req.original_url,
-        "short_url": f"http://<IP-PUBLICA-EC2>:8000/{short_code}"
+        "short_url": f"http://34.235.140.250:8000/{short_code}"
     }
 
 @app.get("/{short_code}")
